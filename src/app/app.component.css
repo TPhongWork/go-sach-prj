@@ -1,0 +1,163 @@
+.phone-button-main {
+    position: fixed;
+    display: none;
+    background: #6b9e0c;
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 5px;
+    bottom: calc(50% - 60px + 10px);
+    transition: background 0.5s;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-button-main i {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .mail-button-main {
+        bottom: calc(50% - 100px);
+    }
+
+    .zalo-button-main {
+        bottom: 50%;
+    }
+
+    .phone-button-main {
+        bottom: calc(50% - 50px);
+    }
+
+    .mess-button-main {
+        bottom: calc(50% + 100px);
+    }
+
+    .fb-button-main {
+        bottom: calc(50% + 50px);
+    }
+}
+
+.zalo-button-main {
+    position: fixed;
+    display: none;
+    background: #ffffff;
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 8px;
+    right: 5px;
+    bottom: 50%;
+    transition: background 0.5s;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid #0490b3; */
+}
+
+.zalo-button-main img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.fb-button-main {
+    position: fixed;
+    display: none;
+    background: #0490b3;
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 5px;
+    bottom: calc(50% + 60px - 10px);
+    transition: background 0.5s;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb-button-main i {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+.mess-button-main {
+    position: fixed;
+    display: none;
+    background: #81d3e7;
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 5px;
+    bottom: calc(50% + 100px);
+    transition: background 0.5s;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mess-button-main img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.mess-button-main i {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+.mail-button-main i {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+
+.mail-button-main {
+    position: fixed;
+    display: none;
+    background: #e69113;
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 5px;
+    bottom: calc(50% - 100px );
+    transition: background 0.5s;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

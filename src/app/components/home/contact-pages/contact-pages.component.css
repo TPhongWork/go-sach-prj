@@ -1,0 +1,17 @@
+.temp-pages{
+    background-color: #377017cc;
+    height: 97px;
+    /* background-image: url('/assets/img/about-bg.jpg') ; */
+}
+.dash{
+    border: none;
+    height: 4px; /* Độ dày của gạch ngang */
+    background-color:#377017cc; /* Màu xanh lá */
+    width: 20%; /* Chiều rộng đầy đủ */
+    margin: 20px 0; /* Khoảng cách trên và dưới dấu gạch */
+}
+.member img{
+    border-radius:50%;
+    width: 290px;
+    height: 290px !important;
+}

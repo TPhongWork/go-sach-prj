@@ -21,15 +21,29 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets",
+              "src/lib"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/lib/bootstrap/js/bootstrap.bundle.min.js",
+              "src/lib/bootstrap/js/bootstrap.bundle.min.js",
+              "src/lib/easing/easing.min.js",
+              "src/lib/superfish/hoverIntent.js",
+              "src/lib/wow/wow.min.js",
+              "src/lib/waypoints/waypoints.min.js",
+              "src/lib/counterup/counterup.min.js",
+              "src/lib/owlcarousel/owl.carousel.min.js",
+              "src/lib/isotope/isotope.pkgd.min.js",
+              "src/lib/lightbox/js/lightbox.min.js",
+              "src/lib/touchSwipe/jquery.touchSwipe.min.js",
+              "src/lib/jquery/jquery.min.js",
+              "src/lib/jquery/jquery-migrate.min.js",
+              "src/lib/superfish/superfish.min.js",
+              "src/assets/js/main-js.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -41,13 +55,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2MB",
+                  "maximumError": "2MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "maximumWarning": "2MB",
+                  "maximumError": "2MB"
                 }
               ],
               "outputHashing": "all"
@@ -84,18 +98,40 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets",
+              "src/lib"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/lib/bootstrap/css/bootstrap.min.css",
+              "src/lib/font-awesome/css/font-awesome.min.css",
+              "src/lib/animate/animate.min.css",
+              "src/lib/ionicons/css/ionicons.min.css",
+              "src/lib/owlcarousel/assets/owl.carousel.min.css",
+              "src/lib/lightbox/css/lightbox.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/lib/bootstrap/js/bootstrap.bundle.min.js",
+              "src/lib/easing/easing.min.js",
+              "src/lib/superfish/hoverIntent.js",
+              "src/lib/wow/wow.min.js",
+              "src/lib/waypoints/waypoints.min.js",
+              "src/lib/counterup/counterup.min.js",
+              "src/lib/owlcarousel/owl.carousel.min.js",
+              "src/lib/isotope/isotope.pkgd.min.js",
+              "src/lib/lightbox/js/lightbox.min.js",
+              "src/lib/touchSwipe/jquery.touchSwipe.min.js",
+              "src/lib/jquery/jquery.min.js",
+              "src/lib/jquery/jquery-migrate.min.js",
+              "src/lib/superfish/superfish.min.js",
+              "src/assets/js/main-js.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b94fe188-b96a-4a98-b3eb-e147f6c11c58"
   }
 }

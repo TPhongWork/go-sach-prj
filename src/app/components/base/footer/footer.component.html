@@ -1,0 +1,62 @@
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info d-flex flex-column">
+            <div>
+              <h3>{{companyData.name}}</h3>
+              <p>{{companyData.content}}</p>
+            </div>
+            <div class="ft-logo">
+              <img src="/assets/img/pages/logo/logo.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Sản phẩm</h4>
+            <ul>
+              <li *ngFor="let item of productData"><i class="ion-ios-arrow-right"></i> <a [href]="'/san-pham/'+item.slug">{{item.name}}</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Menu</h4>
+            <ul>
+              <li ><i class="ion-ios-arrow-right"></i> <a href="/">Trang chủ</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="/gioi-thieu">Giới thiệu</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="/san-pham">Sản phẩm</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="/dia-chi">VP/Nhà máy</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="/tin-tuc">Tin tức</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="/lien-he">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Liên hệ</h4>
+            <p>
+              <strong>Địa chỉ:</strong> {{companyData.address}}<br>
+              <strong>SĐT:  </strong><a [href]="'tel:'+companyData.contact">{{companyData.contact}}</a><br>
+              <strong>Email:  </strong><a [href]="'mailto:'+companyData.email">{{companyData.email}}</a><br>
+            </p>
+
+            <div class="social-links d-flex align-items-center">
+              <a [href]="companyData.socialLink.facebook" target="blank" class="facebook"><i class="fa fa-facebook"></i></a>
+              <span>Gỗ sạch</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Bản quyền thuộc về <strong> Gỗ sạch</strong>
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- #footer -->

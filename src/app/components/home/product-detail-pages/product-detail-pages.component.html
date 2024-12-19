@@ -1,0 +1,99 @@
+<div class="temp-pages"></div>
+<main id="about-pages">
+  <section>
+    <div class="container">
+      <header class="section-header mt-5">
+        <h3 class="section-title">THÔng tin chi tiết {{ product.name }}</h3>
+      </header>
+      <div class="row my-5" *ngFor="let item of product.listType">
+        <div class="col-12 col-lg-5">
+          <div id="portfolio" class="p-0">
+            <div class="portfolio-container">
+              <div class="portfolio-item wow fadeInUp" data-wow-delay="0.3s">
+                <div class="portfolio-wrap">
+                  <figure class="h-100">
+                    <img [src]="item.urlImage" class="" alt="" />
+                    <a
+                      [href]="item.urlImage"
+                      data-lightbox="portfolio"
+                      [attr.data-title]="item.name"
+                      class="link-preview"
+                      title="Xem ảnh"
+                      ><i class="ion ion-eye"></i
+                    ></a>
+                    <a
+                      class="link-details"
+                      title="Xem chi tiết"
+                      ><i class="ion ion-android-open"></i
+                    ></a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-lg-7 des-product wow fadeInUp"
+          data-wow-delay="0.3s"
+        >
+          <div class="d-flex w-100 h-100 flex-column justify-content-between">
+            <div>
+              <h3 class="text-success font-weight-bold">{{ item.name }}</h3>
+              <p class="mb-1">
+                Kích thước: <strong>{{ item.size }}</strong>
+              </p>
+              <p class="mb-1">
+                Công dụng: <strong>{{ item.uses }}</strong>
+              </p>
+              <p class="mb-1">
+                Ưu điểm: <strong>{{ item.prioritize }}</strong>
+              </p>
+              <span >Mô tả: <i style="font-size: 15px;">{{ item.description }}</i></span
+              >
+            </div>
+            <div class="d-flex justify-content-end w-100 button-success">
+              <a
+                class="px-2 py-1 rounded-2 text-white text-center"
+                href="/lien-he"
+                >Nhận báo giá
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <span>{{ aboutProduct.smallTitle }}</span>
+          <h2 class="text-success font-weight-bold">
+            {{ aboutProduct.title }}
+          </h2>
+          <hr class="dash" />
+        </div>
+        <div class="col-12 col-lg-8">
+          <span>{{ aboutProduct.content }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="ribbon">
+    <div class="container">
+      <div class="row align-item-center">
+        <div class="col-12 col-lg-8">
+          <span>Hãy liên hệ ngay với chúng tôi</span>
+          <h3 class="font-weight-bold">Bạn đang tìm kiếm một đối tác tốt</h3>
+        </div>
+        <div class="button col-12 col-lg-4 d-flex align-items-center">
+          <a
+            class="border p-2 rounded-2 text-white text-center font-weight-bold"
+            href="/lien-he"
+            >LIÊN HỆ VỚI CHÚNG TÔI</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

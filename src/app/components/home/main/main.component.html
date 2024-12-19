@@ -1,0 +1,364 @@
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+          <li *ngFor="let slide of listSlide; let i = index" [attr.data-target]="'#introCarousel'" [attr.data-slide-to]="i" 
+              [ngClass]="{'active': i === activeIndex}" (click)="goToSlide(i)"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div *ngFor="let slide of listSlide; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}" [style.background-image]="'url(' + slide + ')'">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>{{titleSlide.title}}</h2>
+                <p>{{titleSlide.content}}</p>
+                <a href="#portfolio" class="btn-get-started scrollto">Tìm hiểu sản phẩm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box" *ngFor="let btslide of listBottomSlide">
+            <i [class]="btslide.icon"></i>
+            <h4 class="title"><a href="">{{btslide.title}}</a></h4>
+            <p class="description">{{btslide.content}}</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>{{aboutUs.mainTitle}}</h3>
+          <p>{{aboutUs.mainContent}}</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="/assets/img/pages/products/san-pham-all.jpg" alt="about-mission" class="img-fluid">
+                <div class="icon"><i class="ion-ios-filing-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">{{aboutUs.product.title}}</a></h2>
+              <p>
+                {{aboutUs.product.content}}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="/assets/img/pages/factory/nha-may.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-home-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">{{aboutUs.factory.title}}</a></h2>
+              <p>
+                {{aboutUs.factory.content}}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="/assets/img/pages/factory/tam-nhin.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">{{aboutUs.vision.title}}</a></h2>
+              <p>
+                {{aboutUs.vision.content}}
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">SẢN PHẨM CỦA CHÚNG TÔI</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li *ngFor="let filter of listTypeProduct" 
+                  [ngClass]="{'filter-active': selectedTypeProductFilter === filter.type}" 
+                  (click)="onFilterClick(filter.type)">
+                {{ filter.nameType}}
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row portfolio-container">
+          <div *ngFor="let item of filteredTypeProduct" class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.3s" >
+            <div class="portfolio-wrap">
+              <figure>
+                <img [src]="item.urlImage" class="img-fluid" alt="">
+                <a [href]="item.urlImage" data-lightbox="portfolio" [attr.data-title]="item.name" 
+                   class="link-preview" title="Xem ảnh"><i class="ion ion-eye"></i></a>
+                <a [href]="'/san-pham/' + item.slug" class="link-details" title="Xem chi tiết"><i class="ion ion-android-open"></i></a>
+              </figure>
+        
+              <div class="portfolio-info">
+                <h4><a [href]="'/san-pham/' + item.slug">{{ item.name}}</a></h4>
+                <p class="text-success">
+                  Kích cỡ : 
+                  <span>{{item.size}}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </section><!-- #portfolio -->
+    <!--==========================
+      Lí do sử dụng Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>{{reasonUseData.title}}</h3>
+        </header>
+
+        <div class="row">
+          <div *ngFor="let item of reasonUseData.listReason" class="col-lg-4 col-md-6 box wow bounceInUp reason" data-wow-duration="1.4s">
+            <div class="icon"><i [class]="item.urlImage"></i></div>
+            <h4 class="title">{{item.title}}</h4>
+            <p class="description">{{item.content}}</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Kêu gọi  Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>{{callAction.title}}</h3>
+        <p>{{callAction.content}}</p>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Skills Section
+    ============================-->
+    <section id="skills">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>{{outputFactory.title}}</h3>
+          <p>{{outputFactory.content}}</p>
+        </header>
+
+        <div class="skills-content">
+
+          <div class="progress" *ngFor="let item of outputFactory.listOutput">
+            <div class="progress-bar bg-success" role="progressbar" [attr.aria-valuenow]="item.value" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">{{item.name}}<i class="val">{{item.value}}%</i></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts"  class="wow fadeIn">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>{{factFactory.title}}</h3>
+          <p>{{factFactory.content}}</p>
+        </header>
+
+        <div class="row counters pb-5">
+  				<div class="col-lg-3 col-6 text-center" *ngFor="let item of factFactory.listFact">
+            <span data-toggle="counter-up">{{item.value}}</span>
+            <p>{{item.name}}</p>
+  				</div>
+  			</div>
+
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <!-- <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Our Clients</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="/assets/img/clients/client-1.png" alt="">
+          <img src="/assets/img/clients/client-2.png" alt="">
+          <img src="/assets/img/clients/client-3.png" alt="">
+          <img src="/assets/img/clients/client-4.png" alt="">
+          <img src="/assets/img/clients/client-5.png" alt="">
+          <img src="/assets/img/clients/client-6.png" alt="">
+          <img src="/assets/img/clients/client-7.png" alt="">
+          <img src="/assets/img/clients/client-8.png" alt="">
+        </div>
+
+      </div>
+    </section> -->
+    <!-- #clients -->
+
+    <!--==========================
+      Feedback
+    ============================-->
+    <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>{{feedBack.title}}</h3>
+        </header>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item" *ngFor="let item of feedBack.listFeedBack">
+            <img [src]="item.imgUrl" class="testimonial-img" alt="">
+            <h3>{{item.name}}</h3>
+            <h4>{{item.description}}</h4>
+            <p>
+              <img src="/assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              {{item.feedback}}
+              <img src="/assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+      Team Sales Section
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="section-header wow fadeInUp">
+          <h3>{{teamSales.title}}</h3>
+          <p>{{teamSales.content}}</p>
+        </div>
+
+        <div class="row justify-content-between" >
+          <div class="col-lg-4 col-md-12 wow fadeInUp" *ngFor="let item of teamSales.listSales">
+            <div class="member">
+              <img [src]="item.imgUrl " class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>{{item.name}}</h4>
+                  <span>{{item.job}}</span>
+                  <div class="social">
+                    <span class="fs-5">
+                      <i class="fa fa-phone fs-5 font-weight-bold mr-2"></i>
+                      {{item.phoneNumber}}
+                    </span>
+                    <span class="fs-5">
+                      <i class="fa fa-envelope fs-5 font-weight-bold mr-2"></i>
+                      {{item.email}}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>{{contactData.title}}</h3>
+          <p>{{contactData.content}}</p>
+        </div>
+
+        <div class="row contact-info">
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>{{contactData.addressTitle}}</h3>
+              <span>{{contactData.address}}</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>{{contactData.phoneNumberTitle}}</h3>
+              <p><a [href]="'tel:' + contactData.phoneNumber">{{contactData.phoneNumber}}</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>{{contactData.emailTitle}}</h3>
+              <p><a [href]="'mailto:'+ contactData.email">{{contactData.email}}</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+

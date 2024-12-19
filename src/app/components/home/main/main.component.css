@@ -1,0 +1,31 @@
+.about-col{
+    min-height: 450px;
+    cursor: pointer;
+}
+.about-col img{
+    background-size:contain;
+    width:350px;
+    height:200px
+}
+.about-col .img{
+    max-height: 200px;
+}
+.reason h4:hover{
+    color: #18d26e;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.reason h4{
+    color: #666666;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.portfolio-info h4{
+    color:#377017cc !important;
+
+}
+.member img{
+    width: 290px;
+    height: 290px ;
+    border-radius:50%;
+}

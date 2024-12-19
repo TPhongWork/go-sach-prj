@@ -1,0 +1,62 @@
+<div class="temp-pages">
+</div>
+<div class="factory-pages-bg" style="background-image: url('/assets/img/pages/about-pages/rung-thong.jpg');">
+    <div class="container">
+        <div class="text-center font-weight-bold text-white fs-1 d-flex" style="height:300px; justify-content: center; align-items: center;">
+        </div>
+    </div>
+</div>
+<main id="about-pages" class="pt-5">
+    <section>
+        <div class="container h-100">
+            <div class=" row ">
+                <div class="col-12 col-lg-4">
+                    <h2 class="mb-0 text-success font-weight-bold ">Văn phòng & <br>Xưởng sản xuất </h2>
+                    <hr class="dash">
+                    <div class="pb-0"><strong class="text-success">Địa chỉ:</strong>{{companyData.address}}</div>
+                    <div class="d-flex align-items-center pb-1 fs-6">
+                        <i class="fa fa-phone fs-5 font-weight-bold mr-2 text-success"></i>
+                        <span>{{companyData.contact[0]}}</span>
+                    </div>
+                    <div class="d-flex align-items-center pb-1  fs-6">
+                        <i class="fa fa-envelope fs-5 font-weight-bold mr-2 text-success"></i>
+                        <span> {{companyData.email}}</span>
+                    </div>
+                    <div class="d-flex align-items-center pb-1  fs-6">
+                        <i class="fa fa-link fs-5 font-weight-bold mr-2 text-success"></i>
+                        <span>{{companyData.website}}</span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="factory-img w-100">
+                        <div class="d-flex w-100 mb-3">
+                            <img class="mr-2" src="/assets/img/pages/factory/nha-may.jpg" alt="">
+                            <img class="ml-2" src="/assets/img/pages/factory/nhan-vien-7.jpg" alt="">
+                        </div>
+                        <div id="mapid"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-4 ">
+                <div class="">
+                    <h3 class="text-success font-weight-bold">Một số hình ảnh công ty</h3>
+                    <hr class="dash">
+                </div>
+            </div>
+        </div>
+        <ribbon-slides [imageUrls]="urlEmployeeFactory"></ribbon-slides>
+    </section>
+    <section id="ribbon" class="mt-5">
+        <div class="container">
+            <div class="row align-item-center">
+                <div class="col-12 col-lg-8">
+                    <span>Hãy liên hệ ngay với chúng tôi</span>
+                    <h3 class="font-weight-bold">Bạn đang tìm kiếm một đối tác tốt </h3>
+                </div>
+                <div class="button col-12 col-lg-4 d-flex align-items-center">
+                    <a class=" border p-2 rounded-2 text-white text-center font-weight-bold" href="/lien-he">LIÊN HỆ VỚI CHÚNG TÔI</a>
+                </div>
+            </div>
+        </div>
+      </section>
+</main>

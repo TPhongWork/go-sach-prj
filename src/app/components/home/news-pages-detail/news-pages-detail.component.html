@@ -1,0 +1,29 @@
+<div class="temp-pages"></div>
+<main id="news-pages">
+  <section>
+    <div class="container">
+      <header class="section-header mt-5">
+        <h3 class="section-title wow fadeInLeft" data-wow-delay="0.3s"><span class="text-success">[{{news.typeNews}}]</span> {{news.title}}</h3>
+      </header>
+    </div>
+    <div class="container">
+      <div class="row wow fadeInDown"  data-wow-delay="0.3s" >
+        <div class="col-12 col-lg-12">
+          <img fade- class="w-100 h-100" [src]="news.imgUrl.imgUrlMain" alt="" />
+        </div>
+        <div class="col-12 col-lg-12">
+          <h3 class="font-weight-bold pt-4">{{ news.description }}</h3>
+          <div class="mb-3 lh-lg fs-6">
+            {{ news.description }}
+          </div>
+          <div class="mb-3 lh-lg fs-6">
+            {{ news.content}}
+          </div>
+          <div class="mb-3 lh-lg fs-6">
+            Thời gian diễn ra: <strong>{{ news.daystart + '~' + news.dayend}}</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

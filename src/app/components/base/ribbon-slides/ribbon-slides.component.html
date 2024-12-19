@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="image-slider d-flex align-items-center justify-content-between"
+       (mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
+    
+    <!-- Nút mũi tên trái với Bootstrap Icon -->
+    <span class="arrow-icon" (click)="prevImage()">
+      <i class="bi bi-chevron-left"></i>
+    </span>
+
+    <!-- Vòng lặp hiển thị các ảnh -->
+    <div class="d-flex"
+         [ngStyle]="{
+           'transform': 'translateX(' + (-currentIndex * 22) + '%)', 
+           'transition': transitionEnabled ? 'transform 1s ease-in-out' : 'none'
+         }">
+      <div class="ribbon-img-frame" *ngFor="let imageUrl of imageUrls; let i = index; trackBy: trackByFn" >
+        <img
+        
+          [src]="imageUrl" 
+          class="img-fluid h-100 w-100" 
+          alt="Image slider"
+        />
+      </div>
+    </div>
+    
+    <!-- Nút mũi tên phải với Bootstrap Icon -->
+    <span class="arrow-icon" (click)="nextImage()">
+      <i class="bi bi-chevron-right"></i>
+    </span>
+  </div>
+</div>

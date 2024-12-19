@@ -1,0 +1,95 @@
+#about-pages{
+    height: auto;
+    /* background-color:rgba(153, 153, 153, 0.8); */
+}
+.temp-pages{
+    background-color: #377017cc;
+    height: 97px;
+    /* background-image: url('/assets/img/about-bg.jpg') ; */
+}
+.dash{
+    border: none;
+    height: 4px; /* Độ dày của gạch ngang */
+    background-color:#377017cc; /* Màu xanh lá */
+    width: 60%; /* Chiều rộng đầy đủ */
+    margin: 20px 0; /* Khoảng cách trên và dưới dấu gạch */
+}
+.dash-20{
+    border: none;
+    height: 4px; /* Độ dày của gạch ngang */
+    background-color:#377017cc; /* Màu xanh lá */
+    width: 20%; /* Chiều rộng đầy đủ */
+    margin: 20px 0; /* Khoảng cách trên và dưới dấu gạch */
+}
+.dash-right{
+    border: none;
+    height: 4px; /* Độ dày của gạch ngang */
+    background-color:#377017cc; /* Màu xanh lá */
+    width: 60%; /* Chiều rộng đầy đủ */
+    margin: 20px 0; /* Khoảng cách trên và dưới dấu gạch */
+    float: right;
+}
+.ribbon-about{
+    margin: 0;
+    padding: 50px 0px;
+    background-color:#377017cc ;
+    width: 100%;
+    height: auto;
+}
+.about-pages-info{
+    margin: 40px 0px;
+}
+.about-pages-image{
+    background-size: cover; /* Điều chỉnh ảnh để bao phủ toàn bộ phần tử */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+.ribbon-about-certification{
+    padding: 30px 0px;
+    background-size: cover; /* Điều chỉnh ảnh để bao phủ toàn bộ phần tử */
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    background-image: url('/assets/img/pages/about-pages/rung-thong.jpg');
+    overflow: hidden; /* Đảm bảo không bị tràn */
+}
+.ribbon-brand{
+    width: 100%;
+    background-color: #f0eded;
+}
+.ribbon-brand img{
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+}
+.img-frame {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.img-frame img:hover {
+    scale: 1.1;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.ribbon-about-certification::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: -1; /* Đẩy lớp phủ xuống phía dưới nội dung */
+    background-size: inherit; /* Đảm bảo kích thước nền giống nhau */
+    background-position: inherit;
+}
+.content-ribbon{
+    position: relative; /* Đảm bảo nội dung không bị ảnh hưởng */
+    z-index: 1; /* Nội dung nằm trên lớp background */
+    color: rgb(255, 255, 255); /* Tùy chỉnh màu sắc cho nội dung */
+    background-color: rgba(0, 0, 0,0.3);
+    padding: 0;
+}

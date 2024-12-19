@@ -1,0 +1,29 @@
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a routerLink="/" (click)="goNavigate('/')" class="scrollto">GỖ SẠCH</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="/assets/img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/" (click)="goNavigate('/')">Trang chủ</a></li>
+          <li [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}"><a routerLink="gioi-thieu" >Giới thiệu</a></li>
+          <li [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}" class="menu-has-children">
+            <a routerLink="san-pham" >Sản phẩm</a>
+            <ul>
+              <li *ngFor="let item of listProduct" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="'san-pham/'+ item.slug" >{{item.name}}</a></li>
+            </ul>
+          </li>
+          <li [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}"><a routerLink="dia-chi" (click)="goNavigate('dia-chi')">VP / Nhà máy</a></li>
+          <li [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}"><a routerLink="tin-tuc" >Tin tức</a></li>
+          <li [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}"><a routerLink="lien-he" >Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- #header -->

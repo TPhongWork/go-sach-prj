@@ -1,0 +1,58 @@
+<div class="temp-pages"></div>
+<main id="news-pages">
+  <section>
+    <div class="container">
+      <header class="section-header mt-5">
+        <h3 class="section-title">TIN TỨC</h3>
+      </header>
+      <div class="row my-5" *ngFor="let item of listNew">
+        <div class="col-12 col-lg-5">
+          <div id="portfolio" class="p-0">
+            <div class="portfolio-container">
+              <div class="portfolio-item wow fadeInUp" data-wow-delay="0.3s">
+                <div class="portfolio-wrap">
+                  <figure class="h-100">
+                    <img [src]="item.imgUrl.imgUrlMain" class="" alt="" />
+                    <a
+                      [href]="item.imgUrl.imgUrlMain"
+                      data-lightbox="portfolio"
+                      [attr.data-title]="item.name"
+                      class="link-preview"
+                      title="Xem ảnh"
+                      ><i class="ion ion-eye"></i
+                    ></a>
+                    <a class="link-details" [href]="'/tin-tuc/'+ item.slug" title="Xem chi tiết"
+                      ><i class="ion ion-android-open"></i
+                    ></a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-lg-7 des-product wow fadeInUp"
+          data-wow-delay="0.3s"
+        >
+          <div class="d-flex w-100 h-100 flex-column justify-content-between">
+            <div>
+              <h3 class="text-success font-weight-bold">{{ item.title }}</h3>
+              <span>{{ item.title }}</span>
+              <p class="mb-2">
+                Thời gian diễn ra :
+                <strong>{{ item.daystart + item.dayend }}</strong>
+              </p>
+            </div>
+            <div class="d-flex justify-content-end w-100 button-success">
+              <a
+                class="px-2 py-1 rounded-2 text-white text-center"
+                [href]="'/tin-tuc/' + item.slug"
+                >Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

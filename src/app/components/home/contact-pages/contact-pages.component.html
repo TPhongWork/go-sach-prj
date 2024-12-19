@@ -1,0 +1,75 @@
+<div class="temp-pages"></div>
+<main id="about-pages">
+      <!--==========================
+      Team Sales Section
+    ============================-->
+    <section id="team">
+        <div class="container">
+          <div class="section-header wow fadeInUp">
+            <h3>{{teamSales.title}}</h3>
+            <p>{{teamSales.content}}</p>
+          </div>
+  
+          <div class="row justify-content-between" >
+            <div class="col-lg-4 col-md-12 wow fadeInUp" *ngFor="let item of teamSales.listSales">
+              <div class="member">
+                <img [src]="item.imgUrl " class="img-fluid h-100 w-100" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>{{item.name}}</h4>
+                    <span>{{item.job}}</span>
+                    <div class="social">
+                      <span class="fs-5">
+                        <i class="fa fa-phone fs-5 font-weight-bold mr-2"></i>
+                        {{item.phoneNumber}}
+                      </span>
+                      <span class="fs-5">
+                        <i class="fa fa-envelope fs-5 font-weight-bold mr-2"></i>
+                        {{item.email}}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- #team -->
+      <section id="contact" class="section-bg wow fadeInUp">
+        <div class="container">
+  
+          <div class="section-header">
+            <h3>{{contactData.title}}</h3>
+            <p>{{contactData.content}}</p>
+          </div>
+  
+          <div class="row contact-info">
+            <div class="col-md-4">
+              <div class="contact-address">
+                <i class="ion-ios-location-outline"></i>
+                <h3>{{contactData.addressTitle}}</h3>
+                <address>{{contactData.address}}</address>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="contact-phone">
+                <i class="ion-ios-telephone-outline"></i>
+                <h3>{{contactData.phoneNumberTitle}}</h3>
+                <p><a [href]="'tel:'+contactData.phoneNumber">{{contactData.phoneNumber}}</a></p>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="contact-email">
+                <i class="ion-ios-email-outline"></i>
+                <h3>{{contactData.emailTitle}}</h3>
+                <p><a [href]="'mailto:'+ contactData.email">{{contactData.email}}</a></p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </section><!-- #contact -->
+</main>

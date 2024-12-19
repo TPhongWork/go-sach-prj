@@ -1,0 +1,53 @@
+.temp-pages{
+    background-color: #377017cc;
+    height: 97px;
+    /* background-image: url('/assets/img/about-bg.jpg') ; */
+}
+.dash{
+    border: none;
+    height: 4px; /* Độ dày của gạch ngang */
+    background-color:#377017cc; /* Màu xanh lá */
+    width: 30%; /* Chiều rộng đầy đủ */
+    margin: 20px 0; /* Khoảng cách trên và dưới dấu gạch */
+}
+.img-frame {
+    overflow: hidden;
+}
+.img-frame img:hover{
+    scale: 1.2;
+    transition: 0.8s;
+    cursor: pointer;
+}
+figure{
+    height: 100%;
+    width: 100%;
+}
+figure img{
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+
+}
+.portfolio-item{
+    border-radius: 10px;
+}
+.des-product{
+    padding:20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(114, 233, 3, 0), 0 2px 15px 0 rgba(41, 85, 0, 0.06);
+}
+.button:hover a{
+    background-color: #ccc;
+    color: #377017cc !important;
+}
+
+.button-success a{
+    border: 1px solid #377017cc;
+    background-color: #377017cc;
+    color: #fff !important;
+}
+.button-success a:hover{
+    border: 1px solid #377017cc;
+    background-color: #fff;
+    color: #377017cc !important;
+}
