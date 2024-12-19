@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{Ja as o,Ka as s,R as n,Sa as a,Va as i}from"./chunk-QZAVSTTA.mjs";import"./chunk-5XUXGTUW.mjs";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-service-pages"]],standalone:!0,features:[i],decls:3,vars:0,template:function(e,c){e&1&&(o(0,"section")(1,"p"),a(2,"service-pages works!"),s()())}})};export{p as ServicePagesComponent};

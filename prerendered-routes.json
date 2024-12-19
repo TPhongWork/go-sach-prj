@@ -1,0 +1,11 @@
+{
+  "routes": [
+    "/",
+    "/dia-chi",
+    "/dich-vu",
+    "/gioi-thieu",
+    "/lien-he",
+    "/san-pham",
+    "/tin-tuc"
+  ]
+}
