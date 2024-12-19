@@ -1,2 +1,0 @@
-import './polyfills.server.mjs';
-var o={name:"G\u1ED6 S\u1EA0CH",address:"L\xE3 C\xF4i, X. Y\xEAn vi\xEAn, H. Gia L\xE2m, Tp.H\xE0 N\u1ED9i",taxNumber:"0363499815",contact:["0363499815"],email:"gosach90@gmail.com",website:"https://gosach.vn",socialLink:{facebook:"https://www.facebook.com/GOSACH90",twiter:"https://www.facebook.com/GOSACH90",instagram:"https://www.facebook.com/GOSACH90",google:"https://www.facebook.com/GOSACH90"}};export{o as a};
