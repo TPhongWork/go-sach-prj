@@ -1,9 +1,9 @@
 const SlideImageMain = 
 [
-    '/assets/img/pages/slides/slide1.jpg',
-    '/assets/img/pages/slides/slide2.jpg',
-    '/assets/img/pages/slides/slide3.jpg',
-    '/assets/img/pages/slides/slide4.jpg',
+    'assets/img/pages/slides/slide1.jpg',
+    'assets/img/pages/slides/slide2.jpg',
+    'assets/img/pages/slides/slide3.jpg',
+    'assets/img/pages/slides/slide4.jpg',
 ]
 const TitleSlide={
     title: 'Tinh tế - Tiện lợi',

@@ -14,19 +14,19 @@ const SaleTeam = {
     listSales:[
         {
             name:'Mr. Lê Trung Thành',
-            imgUrl:'/assets/img/pages/teamsales/teamsale-1.jpg',
+            imgUrl:'assets/img/pages/teamsales/teamsale-1.jpg',
             phoneNumber: '0363499815',
             email: 'letrungthanh@gmail.com'
         },
         {
             name:'Mrs. Phạm Huệ Anh',
-            imgUrl:'/assets/img/pages/teamsales/teamsale-2.jpg',
+            imgUrl:'assets/img/pages/teamsales/teamsale-2.jpg',
             phoneNumber: '0979922864',
             email: 'phamhueanhanh@gmail.com'
         },
         {
             name:'Mrs. Lâm Thị Nghĩa',
-            imgUrl:'/assets/img/pages/teamsales/teamsale-3.jpg',
+            imgUrl:'assets/img/pages/teamsales/teamsale-3.jpg',
             phoneNumber: '0332819215',
             email: 'nghiavet888@gmail.com '
         }
