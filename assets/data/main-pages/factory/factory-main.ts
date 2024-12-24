@@ -25,19 +25,19 @@ const FactAboutFactory = {
     customerValue: 100,
     listFact:[
         {
-            value: 150,
+            value: 200,
             name: 'Khách hàng'
         },
         {
-            value: 20,
+            value: 15,
             name: 'Sản phẩm'
         },
         {
-            value: 500000,
+            value: '70K',
             name: 'Số lượng SP đã bán'
         },
         {
-            value: 100,
+            value: 50,
             name: 'Nhân lực'
         }
     ]
