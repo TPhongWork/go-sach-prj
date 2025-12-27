@@ -136,14 +136,14 @@
           <div *ngFor="let item of filteredTypeProduct" class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.3s" >
             <div class="portfolio-wrap">
               <figure>
-                <img [src]="item.urlImage" class="img-fluid" alt="">
+                <img [src]="item.urlImage" class="img-fluid" alt="" (click)="navigateToInternal('san-pham/'+item.slug)">
                 <a [href]="item.urlImage" data-lightbox="portfolio" [attr.data-title]="item.name" 
                    class="link-preview" title="Xem ảnh"><i class="ion ion-eye"></i></a>
-                <a [href]="'/san-pham/' + item.slug" class="link-details" title="Xem chi tiết"><i class="ion ion-android-open"></i></a>
+                <a [href]="'san-pham/' + item.slug" class="link-details" title="Xem chi tiết"><i class="ion ion-android-open"></i></a>
               </figure>
         
-              <div class="portfolio-info">
-                <h4><a [href]="'/san-pham/' + item.slug">{{ item.name}}</a></h4>
+              <div class="portfolio-info" (click)="navigateToInternal('san-pham/'+item.slug)">
+                <h4><a [href]="'san-pham/' + item.slug">{{ item.name}}</a></h4>
                 <p class="text-success">
                   Kích cỡ : 
                   <span>{{item.size}}</span>
@@ -223,7 +223,7 @@
 
         <div class="row counters pb-5">
   				<div class="col-lg-3 col-6 text-center" *ngFor="let item of factFactory.listFact">
-            <span data-toggle="counter-up">{{item.value}}</span>
+            <span >{{item.value}}+</span>
             <p>{{item.name}}</p>
   				</div>
   			</div>
@@ -263,12 +263,12 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>{{feedBack.title}}</h3>
+          <h3>{{doiTac.title}}</h3>
         </header>
 
         <div class="owl-carousel testimonials-carousel">
 
-          <div class="testimonial-item" *ngFor="let item of feedBack.listFeedBack">
+          <div class="testimonial-item" *ngFor="let item of doiTac.listDoiTac">
             <img [src]="item.imgUrl" class="testimonial-img" alt="">
             <h3>{{item.name}}</h3>
             <h4>{{item.description}}</h4>

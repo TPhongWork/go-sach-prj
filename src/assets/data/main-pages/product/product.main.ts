@@ -34,6 +34,13 @@ const ProductMainData :any[] = [
         size:['10.5cm - 22cm'],
         slug:'bo-dung-cu-go'
     },
+    {
+        urlImage:'/assets/img/pages/products/category/thiet-ke-theo-yeu-cau.jpg',
+        name:'Thiết kế theo yêu cầu',
+        type:'Order',
+        size:['Theo yêu cầu ( từ 3000SP )'],
+        slug:'thiet-ke-theo-yeu-cau'
+    },
 ]
 const ListTypeProduct = [
     {
@@ -51,11 +58,14 @@ const ListTypeProduct = [
     {
         type:'Knife',
         nameType:'Dao'
-    }
-    ,
+    },
     {
         type:'SetCombo',
         nameType:'Bộ dụng cụ'
+    },
+    {
+        type:'Order',
+        nameType:'Thiết kế theo yêu cầu'
     }
 ]
 export {ListTypeProduct,ProductMainData};

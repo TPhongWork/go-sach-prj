@@ -13,7 +13,7 @@
         >
           <div class="portfolio-wrap">
             <figure>
-              <img [src]="item.urlImage[0]" class="img-fluid" alt="" />
+              <img [src]="item.urlImage[0]" class="img-fluid" alt="" (click)="navigateToInternal('san-pham/'+item.slug)"/>
               <a
                 [href]="item.urlImage[0]"
                 data-lightbox="portfolio"
@@ -23,16 +23,16 @@
                 ><i class="ion ion-eye"></i
               ></a>
               <a
-                [href]="'/san-pham/' + item.slug"
+                [href]="'san-pham/' + item.slug"
                 class="link-details"
                 title="Xem chi tiết"
                 ><i class="ion ion-android-open"></i
               ></a>
             </figure>
 
-            <div class="portfolio-info">
+            <div class="portfolio-info" (click)="navigateToInternal('san-pham/'+item.slug)">
               <h4>
-                <a [href]="'/san-pham/' + item.slug">{{ item.name }}</a>
+                <a [href]="'san-pham/' + item.slug">{{ item.name }}</a>
               </h4>
             </div>
           </div>
@@ -62,7 +62,7 @@
                 <h3 class="font-weight-bold">Bạn đang tìm kiếm một đối tác tốt </h3>
             </div>
             <div class="button col-12 col-lg-4 d-flex align-items-center">
-                <a class=" border p-2 rounded-2 text-white text-center font-weight-bold" href="/lien-he">LIÊN HỆ VỚI CHÚNG TÔI</a>
+                <a class=" border p-2 rounded-2 text-white text-center font-weight-bold" href="lien-he">LIÊN HỆ VỚI CHÚNG TÔI</a>
             </div>
         </div>
     </div>

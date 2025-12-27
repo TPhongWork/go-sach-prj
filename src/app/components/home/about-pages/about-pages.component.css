@@ -52,7 +52,6 @@
     background-position: center;
     position: relative;
     width: 100%;
-    background-image: url('/assets/img/pages/about-pages/rung-thong.jpg');
     overflow: hidden; /* Đảm bảo không bị tràn */
 }
 .ribbon-brand{

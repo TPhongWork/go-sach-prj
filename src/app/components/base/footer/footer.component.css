@@ -2,3 +2,11 @@
     width: 150px;
     height:auto;
 }
+
+#ribbon-thanks{
+    padding: 50px 0px;
+    background-color:#377017cc ;
+    width: 100%;
+    height: auto;
+    color: #fff;
+}

@@ -28,19 +28,20 @@
 #mapid { 
     height: 500px; 
 }
-#ribbon{
-    margin: 0;
-    padding: 50px 0px;
-    background-color:#377017cc ;
-    width: 100%;
-    height: auto;
-    color: #fff;
+.button a{
+    background-color: #377017cc;
+    color: #fff !important;
+}
+
+.button:hover a{
+    background-color: #ccc;
+    color: #377017cc !important;
 }
 #ribbon{
     margin: 0;
     padding: 50px 0px;
-    background-color:#377017cc ;
+    background-color:#dbf5cccc ;
     width: 100%;
     height: auto;
-    color: #fff;
+    color: #377017cc;
 }

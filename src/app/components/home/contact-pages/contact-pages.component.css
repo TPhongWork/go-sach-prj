@@ -10,6 +10,7 @@
     width: 20%; /* Chiều rộng đầy đủ */
     margin: 20px 0; /* Khoảng cách trên và dưới dấu gạch */
 }
+.member,
 .member img{
     border-radius:50%;
     width: 290px;

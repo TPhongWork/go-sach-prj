@@ -1119,16 +1119,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .member-info {
-  visibility: hidden;
+  visibility: visible;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
   transition: 0.2s;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 #team .member .member-info-content {
@@ -1136,11 +1137,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: margin 0.2s;
 }
 
-#team .member:hover .member-info {
+/* #team .member:hover .member-info {
   background: rgba(0, 0, 0, 0.7);
   visibility: visible;
   transition: 0.4s;
-}
+} */
 
 #team .member:hover .member-info-content {
   margin-top: 0;

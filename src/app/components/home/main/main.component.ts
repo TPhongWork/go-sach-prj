@@ -21,6 +21,8 @@ import {
   TitleSlide,
 } from '../../../../assets/data/main-pages/slide/SlideImage';
 import { ProductData } from '../../../../assets/data/product-pages/product-data';
+import { Router } from '@angular/router';
+import { DoiTacData } from '../../../../assets/data/main-pages/doi-tac/doi-tac';
 @Component({
   selector: 'app-main',
   standalone: true,
@@ -49,6 +51,9 @@ export class MainComponent implements OnInit, AfterViewInit {
   //Feedback
   feedBack: any = {};
 
+  //DoiTac
+  doiTac: any = {};
+
   //Output factory
   outputFactory: any = {};
   factFactory: any = {};
@@ -63,7 +68,7 @@ export class MainComponent implements OnInit, AfterViewInit {
   selectedTypeProductFilter = 'All';
   filteredTypeProduct: any[] = [];
 
-  constructor(@Inject(PLATFORM_ID) private platformId: any) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: any,private router: Router) {}
   ngAfterViewInit(): void {
   }
 
@@ -80,6 +85,7 @@ export class MainComponent implements OnInit, AfterViewInit {
     this.outputFactory = FactoryMainData;
     this.factFactory = FactAboutFactory;
     this.feedBack = FeedbackData;
+    this.doiTac = DoiTacData;
     this.teamSales = SaleTeam;
     this.contactData = ContactData
     if (isPlatformBrowser(this.platformId)) {
@@ -87,7 +93,9 @@ export class MainComponent implements OnInit, AfterViewInit {
     }
     
   }
-
+  navigateToInternal(route: string): void {
+    this.router.navigate([route]);
+  }
   onFilterClick(filter: string): void {
     this.selectedTypeProductFilter = filter;
 

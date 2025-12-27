@@ -20,6 +20,9 @@
     transition: 0.5s;
     cursor: pointer;
 }
+.portfolio-info{
+    cursor: pointer;
+}
 .portfolio-info h4{
     color:#377017cc !important;
 

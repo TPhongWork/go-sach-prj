@@ -29,6 +29,14 @@ const ProductData: any[] = [
         description:' thìa gỗ tròn nhỏ dùng một lần 10,5cm nổi bật như một lựa chọn hoàn hảo cho những ai đang tìm kiếm giải pháp tiêu dùng bền vững. Không chỉ đơn thuần là dụng cụ ăn uống, chiếc thìa nhỏ xinh này còn mang thông điệp về sự kết hợp giữa tiện ích và lối sống xanh.',
         uses:'Đồ ăn nhanh , đồ ăn mang về, bữa tiệc , ăn bánh , uống cafe,...',
         prioritize:'Chịu nhiệt tốt, độ bền cao, an toàn sức khỏe, dễ sử dụng'
+      },
+      {
+        name:'Đóng gói, khắc tên theo yêu cầu',
+        size:'5cm x 20cm',
+        urlImage:'/assets/img/pages/products/detail/dong-goi-bao-bi.jpg',
+        description:'Đóng gói và khắc tên các loại sản phẩm trên theo thiết kế bao bì yêu cầu',
+        uses:'',
+        prioritize:''
       }
     ],
     title: 'Thìa gỗ dùng một lần',
@@ -57,6 +65,14 @@ const ProductData: any[] = [
         description:'Trong bối cảnh cuộc sống hiện đại đề cao sự tiện lợi và bảo vệ môi trường, dao gỗ dùng một lần kích thước 22 cm trở thành một lựa chọn tối ưu cho những bữa tiệc, dã ngoại hay các bữa ăn nhanh gọn. Không chỉ sở hữu kích thước lý tưởng cho nhiều loại thực phẩm, dao gỗ còn mang lại trải nghiệm sử dụng an toàn, bền vững, và đầy phong cách.',
         uses:'Cắt bánh sinh nhật , nấu nướng, bữa tiệc, dã ngoại,...',
         prioritize:'Độ sắc vừa phải, độ bền cao, dễ sử dụng, an toàn sức khỏe'
+      },
+      {
+        name:'Đóng gói, khắc tên theo yêu cầu',
+        size:'5cm x 20cm',
+        urlImage:'/assets/img/pages/products/detail/dong-goi-bao-bi.jpg',
+        description:'Đóng gói và khắc tên các loại sản phẩm trên theo thiết kế bao bì yêu cầu',
+        uses:'',
+        prioritize:''
       }
     ],
     title: 'Dao gỗ dùng một lần',
@@ -81,6 +97,14 @@ const ProductData: any[] = [
         description:'Bạn đã bao giờ tìm kiếm một giải pháp thay thế hoàn hảo cho những chiếc dĩa nhựa dùng một lần gây hại cho môi trường? Nếu câu trả lời là có, thì dĩa gỗ dùng một lần 16cm chính là sản phẩm mà bạn không thể bỏ qua! Không chỉ đáp ứng nhu cầu tiện lợi, dĩa gỗ còn mang lại một trải nghiệm thân thiện với môi trường, sang trọng và vô cùng hiện đại.',
         uses:'Đồ ăn nhanh , đồ ăn mang đi, bữa tiệc, dã ngoại,...',
         prioritize:'Chịu lực tốt, dễ sử dụng, an toàn sức khỏe, thiết kế nhỏ gọn'
+      },
+      {
+        name:'Đóng gói, khắc tên theo yêu cầu',
+        size:'5cm x 20cm',
+        urlImage:'/assets/img/pages/products/detail/dong-goi-bao-bi.jpg',
+        description:'Đóng gói và khắc tên các loại sản phẩm trên theo thiết kế bao bì yêu cầu',
+        uses:'',
+        prioritize:''
       }
     ],
     urlImage: [
@@ -89,6 +113,33 @@ const ProductData: any[] = [
     title: 'Thìa gỗ dùng một lần',
     slug: 'dia-go',
     type:'Plate'
+  },
+  {
+    name: 'Muỗng gỗ',
+    listType:[
+      {
+        name:'Muỗng gỗ lớn 16cm',
+        size:'16cm x 3,4cm',
+        urlImage:'assets/img/pages/products/detail/muong-lon.jpg',
+        description:'Trong cuộc sống hiện đại, việc tìm kiếm các sản phẩm tiện lợi nhưng vẫn thân thiện với môi trường là xu hướng tất yếu. Muỗng gỗ lớn dùng một lần 16cm chính là lựa chọn lý tưởng cho những ai muốn kết hợp giữa tiện ích và ý thức bảo vệ môi trường. Với kích thước vừa vặn, chất liệu tự nhiên, sản phẩm này mang lại trải nghiệm mới mẻ, an toàn và sang trọng cho mọi bữa ăn.',
+        uses:'Pha trà , cafe , đồ ăn mang đi, bữa tiệc, dã ngoại,...',
+        prioritize:'Chịu nhiệt tốt, dễ sử dụng, an toàn sức khỏe, thiết kế bắt mắt'
+      },
+      {
+        name:'Đóng gói, khắc tên theo yêu cầu',
+        size:'5cm x 20cm',
+        urlImage:'/assets/img/pages/products/detail/dong-goi-bao-bi.jpg',
+        description:'Đóng gói và khắc tên các loại sản phẩm trên theo thiết kế bao bì yêu cầu',
+        uses:'',
+        prioritize:''
+      }
+    ],
+    urlImage: [
+      '/assets/img/pages/products/category/muong-go.jpg',
+    ],
+    title: 'Muỗng gỗ dùng một lần',
+    slug: 'muong-go',
+    type: 'Spoon'
   },
   {
     name: 'Bộ dụng cụ gỗ',
@@ -100,6 +151,38 @@ const ProductData: any[] = [
         description:'Trong xu hướng sống xanh và bảo vệ môi trường, set sinh nhật gỗ dùng một lần đã trở thành lựa chọn hàng đầu cho các bữa tiệc sinh nhật thân thiện với thiên nhiên. Không chỉ tiện lợi và thẩm mỹ, sản phẩm còn mang đến một phong cách tiệc mới mẻ, tinh tế và an toàn cho sức khỏe. Set sinh nhật gỗ là sự kết hợp hoàn hảo giữa tính tiện dụng và thông điệp bảo vệ môi trường.',
         uses:'Bữa tiệc sinh nhật, liên hoan có mục đích cắt bánh',
         prioritize:'Chịu lực tốt, dễ sử dụng, an toàn sức khỏe, đa dạng sản phẩm'
+      },
+      {
+        name:'Bộ thìa đũa',
+        size:'16cm - 22cm',
+        urlImage:'/assets/img/pages/products/detail/bo-thia-dua.jpg',
+        description:'Bộ thìa dĩa ăn một lần được làm bằng gỗ tự nhiên, với thiết kế nhỏ gọn, tiện lợi, an toàn cho sức khỏe. Đây là sự lựa chọn hoàn hảo cho các buổi picnic, đi làm, hoặc sử dụng hàng ngày. 1 bộ thìa dĩa sẽ bao gồm có thìa, dĩa, tăm và khăn giấy.',
+        uses:'Sử dụng một lần: Tiện lợi cho các buổi picnic, đi làm, hoặc sử dụng hàng ngày, Thay thế đồ dùng bằng nhựa: Giúp giảm thiểu ô nhiễm môi trường, Dùng để ăn các loại thức ăn: Cơm, canh, súp,…',
+        prioritize:'Chịu lực tốt, dễ sử dụng, an toàn sức khỏe, đa dạng sản phẩm'
+      },
+      {
+        name:'Bộ thìa dĩa',
+        size:'5cm - 25cm',
+        urlImage:'/assets/img/pages/products/detail/bo-muong-dia.jpg',
+        description:'Bộ sản phẩm bao gồm thìa, dĩa, giấy ăn và được làm hoàn toàn từ gỗ tự nhiên, đảm bảo an toàn cho sức khỏe. Thiết kế nhỏ gọn, tiện dụng, thích hợp mang theo khi đi du lịch, dã ngoại hoặc sử dụng hàng ngày, an toàn làm từ gỗ tự nhiên, không chứa hóa chất độc hại, an toàn cho sức khỏe, thiết kế nhỏ gọn, dễ dàng mang theo.',
+        uses:'Sử dụng để ăn các loại thức ăn,Thích hợp cho các buổi dã ngoại, picnic, hội họp, Giảm thiểu việc sử dụng đồ dùng nhựa một lần.',
+        prioritize:'Chịu lực tốt, dễ sử dụng, an toàn sức khỏe, đa dạng sản phẩm'
+      },
+      {
+        name:'Bộ muỗng đũa khăn tăm',
+        size:'16cm - 25cm',
+        urlImage:'/assets/img/pages/products/detail/bo-muong-dua.jpg',
+        description:'Bộ muỗng đũa khăn tăm ăn một lần được làm bằng gỗ tự nhiên, với thiết kế nhỏ gọn, tiện lợi, an toàn cho sức khỏe. Sử dụng buổi picnic, quán ăn, quán cà phê, quán chè hoặc sử dụng hàng ngày.',
+        uses:'Sử dụng một lần: Tiện lợi cho các cửa hàng kinh doan các loại đồ ăn như chè, cháo, trà sữa, Thay thế đồ dùng bằng nhựa: Giúp giảm thiểu ô nhiễm môi trường, Dùng để ăn các loại thức ăn: Cơm, canh, súp, chè, cháo…',
+        prioritize:'Chịu lực tốt, dễ sử dụng, an toàn sức khỏe, công năng sử dụng cao'
+      },
+      {
+        name:'Bộ dao thìa dĩa khăn tăm',
+        size:'16cm - 25cm',
+        urlImage:'/assets/img/pages/products/detail/bo-dao-thia-dia.jpg',
+        description:'Bộ dao thìa dĩa khăn tăm ăn một lần có bao bì đóng gòi được làm bằng gỗ tự nhiên, với thiết kế nhỏ gọn, tiện lợi, an toàn cho sức khỏe. Thường dùng cho các buổi picnic, tiệc lễ, hoặc sử dụng hàng ngày.',
+        uses:'Sử dụng một lần: Tiện lợi cho các buổi picnic, đi làm, hoặc sử dụng hàng ngày, Thay thế đồ dùng bằng nhựa: Giúp giảm thiểu ô nhiễm môi trường, Dùng để ăn các loại thức ăn: Cơm, canh, súp,…',
+        prioritize:'Chịu lực tốt, dễ sử dụng, an toàn sức khỏe, đầy đủ công năng'
       }
     ],
     urlImage: [
@@ -110,23 +193,31 @@ const ProductData: any[] = [
     type: 'SetCombo'
   },
   {
-    name: 'Muỗng gỗ',
+    name: 'Thiết kế theo yêu cầu',
     listType:[
       {
-        name:'Muỗng gỗ lớn 16cm',
-        size:'16cm x 3,4cm',
-        urlImage:'/assets/img/pages/products/detail/muong-lon.jpg',
-        description:'Trong cuộc sống hiện đại, việc tìm kiếm các sản phẩm tiện lợi nhưng vẫn thân thiện với môi trường là xu hướng tất yếu. Muỗng gỗ lớn dùng một lần 16cm chính là lựa chọn lý tưởng cho những ai muốn kết hợp giữa tiện ích và ý thức bảo vệ môi trường. Với kích thước vừa vặn, chất liệu tự nhiên, sản phẩm này mang lại trải nghiệm mới mẻ, an toàn và sang trọng cho mọi bữa ăn.',
-        uses:'Pha trà , cafe , đồ ăn mang đi, bữa tiệc, dã ngoại,...',
-        prioritize:'Chịu nhiệt tốt, dễ sử dụng, an toàn sức khỏe, thiết kế bắt mắt'
-      }
+        name:'Thiết kế bao bì',
+        size:'5cm - 22cm',
+        urlImage:'/assets/img/pages/products/detail/bao-bi-thiet-ke.jpg',
+        description:'Thiết kế bao bì theo yêu cầu của khách hàng',
+        uses:'',
+        prioritize:''
+      },
+      {
+        name:'Thiết kế các sản phẩm theo yêu cầu',
+        size:'5cm - 25cm',
+        urlImage:'/assets/img/pages/products/detail/san-pham-thiet-ke.jpg',
+        description:'Bộ sản phẩm bao gồm thìa, dĩa, giấy ăn ,.. được thiết kế theo yêu cầu',
+        uses:'',
+        prioritize:''
+      },
     ],
     urlImage: [
-      '/assets/img/pages/products/category/muong-go.jpg',
+      '/assets/img/pages/products/category/thiet-ke-theo-yeu-cau.jpg',
     ],
-    title: 'Muỗng gỗ dùng một lần',
-    slug: 'muong-go',
-    type: 'Spoon'
+    title: 'Thiết kế theo yêu cầu',
+    slug: 'thiet-ke-theo-yeu-cau',
+    type: 'Order'
   },
 ];
 

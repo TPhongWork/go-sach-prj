@@ -29,5 +29,7 @@ export class ProductPagesComponent implements OnInit {
     this.router.navigate(['/san-pham/',slug]);
     
   }
-
+  navigateToInternal(route: string): void {
+    this.router.navigate([route]);
+  }
 }

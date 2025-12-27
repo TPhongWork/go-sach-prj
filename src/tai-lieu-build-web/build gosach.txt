@@ -1,0 +1,14 @@
+npm i -g @angular/cli
+build app 
+- git commit 
+- git remote
+- git push -u origin master
+
+- ng build --output-path=dist --base-href="/ten repo/"
+- ngh --dir=dist
+- ngh --dir=dist/browser
+
+update lai dung 2 cau lenh nay : 
+- ng build --output-path=dist --base-href="/ten repo/" 
+	(ví du: go-sach-prj, ở đây thfi k cần diền chỉ cần ...--base-href="/")
+- ngh --dir=dist/browser

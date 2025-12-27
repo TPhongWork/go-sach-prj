@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 #intro .carousel-item {
   width: 100%;
   height: 100vh;
-  background-size: cover;
+  background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1123,10 +1123,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0px 30px;
   cursor: pointer;
 }
-#team .member:hover .member-info {
+/* #team .member:hover .member-info {
   visibility: hidden;
   transition: 0.4s;
-}
+} */
 
 #team .member:hover .member-info-content {
   margin-top: -50px;
