@@ -1,6 +1,6 @@
 const CompanyData: any  = {
     name: 'GỖ SẠCH',
-    address:'Lã Côi, X. Yên viên, H. Gia Lâm, Tp.Hà Nội',
+    address:'Lã Côi, Xã Phù Đổng, Thành phố Hà Nội',
     taxNumber:'0363499815',
     contact:[
         '0363499815'

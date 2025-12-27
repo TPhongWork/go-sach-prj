@@ -1,7 +1,7 @@
 const ContactData={
     title: 'LIÊN HỆ',
     content: 'Liên hệ trực tiếp qua hotline , địa chỉ email công ty để được tư vấn và giải đáp', 
-    address:'Yên Viên , H. Gia Lâm , Tp. Hà nội',
+    address:'Lã Côi, Xã Phù Đổng, Thành phố Hà Nội',
     phoneNumber: '0363499815',
     email:'gosach90@gmail.com',
     addressTitle: 'Địa chỉ',
@@ -19,10 +19,10 @@ const SaleTeam = {
             email: 'letrungthanh@gmail.com'
         },
         {
-            name:'Mrs. Phạm Huệ Anh',
+            name:'Mrs. Nguyễn Thị Phương',
             imgUrl:'/assets/img/pages/teamsales/teamsale-2.jpg',
-            phoneNumber: '0979922864',
-            email: 'phamhueanhanh@gmail.com'
+            phoneNumber: '0336783080',
+            email: 'phuongbn1610@gmail.com'
         },
         {
             name:'Mrs. Lâm Thị Nghĩa',

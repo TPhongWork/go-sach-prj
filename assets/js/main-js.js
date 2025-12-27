@@ -169,9 +169,9 @@ jQuery(document).ready(function( $ ) {
 
 });
 
-var mymap = L.map('mapid').setView([21.0938500, 105.9220540], 16);
+var mymap = L.map('mapid').setView([21.096257, 105.924119], 16);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(mymap);
-var marker = L.marker([21.0938500, 105.9220540]).addTo(mymap);
+var marker = L.marker([21.096257, 105.924119]).addTo(mymap);
