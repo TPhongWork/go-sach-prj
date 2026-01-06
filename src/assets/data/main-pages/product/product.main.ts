@@ -25,7 +25,7 @@ const ProductMainData :any[] = [
         name:'Muỗng gỗ',
         type:'Spoon',
         size:['16cm'],
-        slug:'thia-go'
+        slug:'muong-go'
     },
     {
         urlImage:'/assets/img/pages/products/category/bo-dung-cu.jpg',
